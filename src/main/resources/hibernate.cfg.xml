@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 5.3//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-5.3.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- Leer propiedades externas -->
+        <property name="hibernate.connection.driver_class">${hibernate.connection.driver_class}</property>
+        <property name="hibernate.connection.url">${hibernate.connection.url}</property>
+        <property name="hibernate.connection.username">${hibernate.connection.username}</property>
+        <property name="hibernate.connection.password">${hibernate.connection.password}</property>
+        <property name="hibernate.dialect">${hibernate.dialect}</property>
+        <property name="hibernate.show_sql">${hibernate.show_sql}</property>
+        <property name="hibernate.format_sql">${hibernate.format_sql}</property>
+        <property name="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</property>
+
+        <!-- Entidades -->
+        <mapping class="org.example.hibernate.hibernateFiles.model.Cita"/>
+        <mapping class="org.example.hibernate.hibernateFiles.model.Paciente"/>
+        <mapping class="org.example.hibernate.hibernateFiles.model.Especialidad"/>
+        <mapping class="org.example.hibernate.hibernateFiles.model.Empleado"/>
+    </session-factory>
+</hibernate-configuration>

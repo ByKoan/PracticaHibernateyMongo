@@ -1,0 +1,59 @@
+{
+    "empleados": [
+        {
+            "_id": 1, 
+            "nombre": "diego",
+            "usuario": "diego",
+            "contraseña": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+            "rol": "administrador"
+        }
+    ],
+    "pacientes": [
+        {
+            "_id": 1,
+            "nombre": "Juan",
+            "apellidos": "Garcia torres",
+            "dni": "12345678A",
+            "telefono": "600123456",
+            "correo": "juan@gmail.com",
+            "direccion": "C/ Mayor 10"
+        }, 
+        {
+            "_id": 2,
+            "nombre": "Lucía",
+            "apellidos": "Matínez perez",
+            "dni": "23456789B",
+            "telefono": "611987654",
+            "correo": "lucia@gmail.com",
+            "direccion": "Av. España 22"
+        }
+    ],
+    "especialidades": [
+        {"_id": 1, "nombre": "Traumatología"},
+        {"_id": 2, "nombre": "Cardiología"},
+        {"_id": 3, "nombre": "Medico de familia"},
+        {"_id": 4, "nombre": "Dermatología"},
+        {"_id": 5, "nombre": "Neumología"},
+        {"_id": 6, "nombre": "Cirugía"},
+        {"_id": 7, "nombre": "Psiquiatría"}
+
+    ],
+    "citas": [
+        {
+        "_id": 1,
+        "id_paciente": 1,
+        "id_empleado": 1,
+        "id_especialidad": 1,
+        "fecha_cita": "2025-10-10T00:00:00Z",
+        "observaciones": "Test1"
+        },
+        {
+        "_id": 2,
+        "id_paciente": 2,
+        "id_empleado": 1,
+        "id_especialidad": 3,
+        "fecha_cita": "2025-10-11T00:00:00Z",
+        "observaciones": "Test2"
+        }
+    ]
+}

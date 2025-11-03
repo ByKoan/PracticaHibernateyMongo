@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.hibernate.controladormenu">
+   <children>
+      <Button fx:id="HibernateButton" layoutX="133.0" layoutY="162.0" mnemonicParsing="false" onAction="#hibernateClicked" prefHeight="76.0" prefWidth="109.0" text="Hibernate">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="MongoButton" layoutX="367.0" layoutY="162.0" mnemonicParsing="false" onAction="#mongoClicked" prefHeight="76.0" prefWidth="109.0" text="Mongo">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
